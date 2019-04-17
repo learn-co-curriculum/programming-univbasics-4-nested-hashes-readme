@@ -10,13 +10,12 @@
 ## Introduction
 
 So far, we've seen hashes that store values in associated keys. In the hashes
-we've built up until now, each key points to a single value. Hashes are very
-useful, however, because they can be nested within each other. A key in a hash
-can point to a value that is also a *collection of objects*, i.e. an array or
-even another hash. This is also sometimes referred to as a multidimensional
-hash.
+we've built up until now, each key points to a single value. However, hashes can
+also be nested within each other, which is very useful. A key in a hash can
+point to a value that is also a *collection of objects*, i.e. an array or even
+another hash. This is also sometimes referred to as a multidimensional hash.
 
-As programmers, we strive to write code that models the real-world. The programs
+As programmers, we strive to write code that models the real world. The programs
 we write serve a purpose––whether you're creating a simple command line game or
 an app to help hospitals manage patient data, our code is designed to do a real
 job, like run a game or communicate critical information.
