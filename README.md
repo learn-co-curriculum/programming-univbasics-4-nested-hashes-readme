@@ -2,10 +2,8 @@
 
 ## Learning Goals
 
-- Describe how nested hashes can store complex associations of data
-- Describe the structure of a nested hash
-- Give examples of real-world situations that can require nested hashes
-- Retrieve data from a nested hash
+- Identify how nested hashes can store complex associations of data
+- Identify the structure of a nested hash
 
 ## Introduction
 
@@ -16,14 +14,14 @@ point to a value that is also a *collection of objects*, i.e. an array or even
 another hash. This is also sometimes referred to as a multidimensional hash.
 
 As programmers, we strive to write code that models the real world. The programs
-we write serve a purpose––whether you're creating a simple command line game or
+we write serve a purpose—whether you're creating a simple command line game or
 an app to help hospitals manage patient data, our code is designed to do a real
 job, like run a game or communicate critical information.
 
 In this lesson, we'll introduce nested, or multidimensional, hashes and explain
 how they're useful in programming.
 
-## Where Will You Find Nested Hashes?
+## Identify How Nested Hashes Can Store Complex Associations of Data
 
 Nested hashes are a very common way to store and operate on complex associated
 data in a program. You are likely to encounter them any time you find yourself
@@ -51,7 +49,7 @@ understand that nested hashes are a very common occurrence in programming. They
 are used to store complex collections of data and you will encounter them when
 working with APIs, among other places.
 
-## Nested Hashes Model Real-World Data
+### Nested Hashes Model Real-World Data
 
 We can imagine so many real-world situations and environments in which we are
 dealing with complicated collections of data.
@@ -77,7 +75,7 @@ Otherwise, we may accidentally mix up instructors and students!
 
 How might we convey that these two arrays are related?
 
-## Our First Nested Hash
+## Identify the Structure of a Nested Hash
 
 With a nested hash, we can store complex collections of data. In other words, we
 can store data that is associated to other data via categories and
@@ -104,7 +102,7 @@ is associated not just to one discrete value, but to a collection of values. In
 such a situation, we can create a hash key that points to a value of another
 hash or an array.
 
-## A Note On Mixing our Collection Types
+### A Note On Mixing our Collection Types
 
 You may have noticed in the above example that we have a hash in which the value
 of a key is an array.
@@ -117,7 +115,7 @@ to may be strings, integers, even arrays and hashes.
 In fact, one of the most common nested data structures you'll see when working
 with APIs, as discussed above, is an _array_ of hashes.
 
-## Nesting an Array within a Hash
+### Nesting an Array within a Hash
 
 We'll be building up our own nested hash and operating on such data structures
 in a number of ways over the course of the next few lessons. For now, just read
@@ -170,7 +168,7 @@ school[:instructors][0]
 #  => "Ian"
 ```
 
-## Nesting a Hash within a Hash
+### Nesting a Hash within a Hash
 
 Imagine we're putting together information on various TV show characters, each
 including information about a particular TV show character. An individual hash
