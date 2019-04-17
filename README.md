@@ -2,13 +2,12 @@
 
 ## Learning Goals
 
-- Describe how nested hashes can store complex associations of data.
-- Describe the structure of a nested hash.
-- Give examples of real-world situations that can require nested hashes.
-- Retrieve data from a nested hash.
+- Describe how nested hashes can store complex associations of data
+- Describe the structure of a nested hash
+- Give examples of real-world situations that can require nested hashes
+- Retrieve data from a nested hash
 
 ## Introduction
-
 
 So far, we've seen hashes that store values in associated keys. In the hashes
 we've built up until now, each key points to a single value. Hashes are very
