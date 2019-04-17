@@ -119,7 +119,7 @@ to may be strings, integers, even arrays and hashes.
 In fact, one of the most common nested data structures you'll see when working
 with APIs, as discussed above, is an _array_ of hashes.
 
-## Nested Hash Example
+## Nesting an Array within a Hash
 
 We'll be building up our own nested hash and operating on such data structures
 in a number of ways over the course of the next few lessons. For now, just read
@@ -171,6 +171,62 @@ We could, alternatively, use more than one set of brackets to find our answer:
 school[:instructors][0]
 #  => "Ian"
 ```
+
+## Nesting a Hash within a Hash
+
+Imagine we're putting together information on various TV show characters, each
+including information about a particular TV show character. An individual hash
+for each character might look something like this:
+
+```ruby
+homer = {name: "Homer Simpson", occupation: "Nuclear Safety Inspector", hobbies: ["Watching TV", "Eating donuts"]}
+jon = {name: "Jon Snow", occupation: "King in the North", hobbies: ["Fighting white walkers", "Knowing nothing"]}
+fred = {name: "Mr. Rogers", occupation: "Neighbor", hobbies: ["Making children feel loved and appreciated", "Singing songs"]}
+```
+
+While each hash is about a different character, they are _all_ part of a larger
+collection. We _could_ put them in an array:
+
+```ruby
+[
+  {name: "Homer Simpson", occupation: "Nuclear Safety Inspector", hobbies: ["Watching TV", "Eating donuts"]},
+  {name: "Jon Snow", occupation: "King in the North", hobbies: ["Fighting white walkers", "Knowing nothing"]},
+  {name: "Mr. Rogers", occupation: "Neighbor", hobbies: ["Making children feel loved and appreciated", "Singing songs"]}
+]
+```
+
+This seems weird though. There isn't a particular order we need to maintain.
+Having everything in an array makes it more difficult to find a particular hash,
+since you will need to know the exact index of that hash to access it. It makes
+more sense to contain these hashes within another hash.
+
+```ruby
+tv_show_characters = {
+  "Homer Simpson" => {name: "Homer Simpson", occupation: "Nuclear Safety Inspector", hobbies: ["Watching TV", "Eating donuts"]},
+  "Jon Snow" => {name: "Jon Snow", occupation: "King in the North", hobbies: ["Fighting white walkers", "Knowing nothing"]},
+  "Mr. Rogers" => {name: "Mr. Rogers", occupation: "Neighbor", hobbies: ["Making children feel loved and appreciated", "Singing songs"]}
+}
+```
+
+Here we've used character names as keys to make it more convenient to access
+our hashes even though this data is already stored in the hashes themselves.
+With this hash, we can directly look up a particular character's information
+just by using their name:
+
+```ruby
+tv_show_characters["Homer Simpson"]
+#=> {name: "Homer Simpson", occupation: "Nuclear Safety Inspector", hobbies: ["Watching TV", "Eating donuts"]}
+
+tv_show_characters["Jon Snow"][:occupation]
+#=> "King in the North"
+
+tv_show_characters["Mr. Rogers"][:hobbies][1]
+#=> "Singing songs"
+```
+
+Notice that when accessing nested data, we can use bracket notation multiple
+times to go deeper into the data. We can even mix hash keys and array indexes,
+as with `tv_show_characters["Mr. Rogers"][:hobbies][1]`.
 
 ## Conclusion
 
