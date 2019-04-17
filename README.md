@@ -191,7 +191,7 @@ collection. We _could_ put them in an array:
 ]
 ```
 
-This seems weird though. There isn't a particular order we need to maintain.
+This seems weird, though. There isn't a particular order we need to maintain.
 Having everything in an array makes it more difficult to find a particular hash,
 since you will need to know the exact index of that hash to access it. It makes
 more sense to contain these hashes within another hash.
@@ -227,7 +227,7 @@ as with `tv_show_characters["Mr. Rogers"][:hobbies][1]`.
 ## Conclusion
 
 Nested hashes can get pretty complicated. Read through the example in this
-lesson again before moving on. It's okay if you don't understand everything;
+lesson again before moving on. It's okay if you don't understand everything yet;
 just try to get comfortable reading through the above nested hash.
 
 [docs]: https://data.cityofnewyork.us/resource/7btz-mnc8.json
