@@ -17,8 +17,8 @@ can point to a value that is also a *collection of objects*, i.e. an array or
 even another hash. This is also sometimes referred to as a multidimensional
 hash.
 
-As programmers, we strive to write code that models the real-world. The programs
-we write serve a purpose––whether you're creating a simple command line game or
+As programmers, we strive to write code that models the real world. The programs
+we write to serve a purpose––whether you're creating a simple command line game or
 an app to help hospitals manage patient data, our code is designed to do a real
 job, like run a game or communicate critical information.
 
@@ -33,7 +33,7 @@ working with a large collection of information. In particular, you will
 encounter these data structures when working with data you will pull from APIs.
 
 > API stands for "Application Programming Interface" and here refers to the way
-in which organizations, companies and governments will expose their data to the
+in which organizations, companies, and governments will expose their data to the
 public for use.
 
 New York City, for example, has a robust API called NYC Open Data. Developers
@@ -82,10 +82,10 @@ How might we convey that these two arrays are related?
 ## Our First Nested Hash
 
 With a nested hash, we can store complex collections of data. In other words, we
-can store data that is associated to other data via categories and
+can store data that is associated with other data via categories and
 subcategories.
 
-Both the `students` array and the `instructors` array should be associated to
+Both the `students` array and the `instructors` array should be associated with
 the same school. So, we can create a hash, `school`, that contains keys to
 denote the `instructors` and `students` categories. We can point these keys to
 the arrays that contain our instructors and students respectively.
@@ -114,7 +114,7 @@ of a key is an array.
 Understand that arrays and hashes can store *any type of data*. In other words,
 the individual index items of an array can be strings, integers, or even other
 arrays and hashes. The same is true of hashes. The values that hash keys point
-to may be strings, integers, even arrays and hashes.
+to may be strings, integers, and even arrays or hashes.
 
 In fact, one of the most common nested data structures you'll see when working
 with APIs, as discussed above, is an _array_ of hashes.
