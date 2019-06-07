@@ -95,7 +95,7 @@ Let's take a look:
 ```ruby
 school = {
   instructors: ["Ian", "Johann", "Alex"],
-  dev_team: ["Andrew", "Howard", "Terrance", "Daniel", "Rachel", "Natalie"]
+  students: ["Andrew", "Howard", "Terrance", "Daniel", "Rachel", "Natalie"]
 }
 ```
 In this example, each key in our hash points to a value that is an array.
@@ -132,7 +132,7 @@ and `:classes`, thanks to our nested hash.
 ```ruby
 school = {
   instructors: ["Ian", "Johann", "Alex"],
-  dev_team: ["Andrew", "Howard", "Terrance", "Daniel", "Rachel", "Natalie"],
+  students: ["Andrew", "Howard", "Terrance", "Daniel", "Rachel", "Natalie"],
   classes: ["Software Engineering", "Data Science"]
 }
 ```
